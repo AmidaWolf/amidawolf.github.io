@@ -558,7 +558,7 @@ body {
 
 .modal-section {
   opacity: 0;
-  pointer-events: none;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -571,7 +571,7 @@ body {
 
 .modal-section:target {
   opacity: 1;
-  pointer-events: auto;
+  display: block;
 }
 
 .modal-section__content {
