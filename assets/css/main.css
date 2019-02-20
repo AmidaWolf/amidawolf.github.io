@@ -162,8 +162,8 @@ body {
 
 @media (min-width: 768px) {
   .wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10vh;
+    padding-right: 10vh;
     min-width: 640px;
   }
 }
@@ -172,6 +172,8 @@ body {
   .wrapper {
     margin: 0 auto;
     min-width: 960px;
+    padding-left: 20vh;
+    padding-right: 20vh;
   }
 }
 
