@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сайт-Портфолио</title>
+
+  <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/main.css?ver1" rel="stylesheet" type="text/css">
+
+  <script defer src="assets/js/jquery-3.3.1.min.js"></script>
+  <script defer src="assets/js/main-navigation.js"></script>
+  <script defer src="assets/js/modal.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a id="main"></a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle rek-button main-navigation__toggle--no-script" type="button" name="button"></button>
+        <ul class="main-navigation__list menu-list">
+          <li class="menu-list__item">
+            <a href="#main">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#about">Обо мне</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="header-preview">
+        <h1 class="header-preview__title">Евгений Воропаев</h1>
+        <hr class="header-preview__line line">
+        <p class="header-preview__slogan">&nbsp;<abbr title="HyperText Markup Language" lang="en">HTML5</abbr> и&nbsp;<abbr title="Cascading Style Sheets" lang="en">CSS3</abbr> верстка сайтов и веб-интерфейсов</p>
+      </section>
+      <form action="#contact">
+        <button class="header__button button" type="submit" name="button">Вниз</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="about-me">
+      <div class="wrapper">
+        <a id="about"></a>
+        <h2 class="about-me__title">Немного обо мне и о том, что я умею.</h2>
+        <p class="about-me__text">Я&nbsp;начинающий frontend-разработчик. Изучением данного направления занимаюсь самостоятельно в&nbsp;свободное время (с&nbsp;перспективой сделать это направление основным) и&nbsp;потому желание обучаться для меня&nbsp;&mdash; естественное состояние. И&nbsp;когда удаётся узнать что-то новое и&nbsp;тут&nbsp;же попробовать реализовать&nbsp;&mdash; я&nbsp;испытываю настоящий восторг. А&nbsp;как&nbsp;же иначе! Основной поставщик знаний&nbsp;&mdash; HTML Academy, за&nbsp;что им&nbsp;огромное спасибо! Ссылочка на&nbsp;профиль <a href="https://htmlacademy.ru/profile/id643017"
+            target="_blank">HTML Academy</a>.<br><br>
+          На&nbsp;данный момент в&nbsp;вёрстке использую HTML5 и&nbsp;CSS3, flexbox и&nbsp;осваиваю grid. Знаком со&nbsp;стратегиями mobile first и&nbsp;responsive design, знаю о&nbsp;Graceful Degradation и&nbsp;Progressive enhancement. Кроссбраузерная, адаптивная/резиновая, семантическая вёрстка для современных браузеров, проходящая валидатор W3, несложные анимации&nbsp;&mdash; могу, умею, практикую. Препроцессоры less и&nbsp;sass, js&nbsp;&mdash; на&nbsp;уровне &laquo;использовал пару раз&raquo;, продолжаю изучать. Работа с&nbsp;git/github, БЭМ-методология&nbsp;&mdash; использую в&nbsp;последних проектах, однако ещё есть куда расти.
+          <br><br>
+          Моё резюме можно взять <a href="assets/CV.pdf" target="_blank">тут</a>.
+        </p>
+        <ul class="about-me__list my-skills-list">
+          <li class="my-skills-list__item">
+            <span class="my-skills-list__icon icon-first"></span>
+            <h3 class="my-skills-list__title">HTML5/CSS3</h3>
+            <p class="my-skills-list__text">Действительно полное использование возможностей. Семантические тэги, несложные анимации, флексовая резина, удивительные свойства гридов&nbsp;&mdash; вот это вот всё и&nbsp;ещё немножко!</p>
+          </li>
+          <li class="my-skills-list__item">
+            <span class="my-skills-list__icon icon-second"></span>
+            <h3 class="my-skills-list__title">Кроссбраузерная, мобильная и валидная вёрстка</h3>
+            <p class="my-skills-list__text">Нужно, чтобы страница работала в&nbsp;старом IE7 (или ниже)? Без проблем, сверстаю одинаково выглядящую страницу как на&nbsp;современных технологиях, так и&nbsp;на&nbsp;старых добрых &laquo;флоатах&raquo; и&nbsp;иже с&nbsp;ними. Адаптировность, резиновость и&nbsp;гибкость&nbsp;&mdash; можно всё! Так&nbsp;же уделяю внимание доступности. Валидация кода&nbsp;&mdash; обязательно!</p>
+          </li>
+          <li class="my-skills-list__item">
+            <span class="my-skills-list__icon icon-third"></span>
+            <h3 class="my-skills-list__title">JS и фреймворки</h3>
+            <p class="my-skills-list__text">Умею в&nbsp;&laquo;чистый&raquo; js&nbsp;на&nbsp;начальном уровне. Из&nbsp;фреймворков&nbsp;&mdash; чуть-чуть jquery, вроде слайдеров, меню-гамбургеров и&nbsp;прочих базовых радостей.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <hr class="section-line line">
+    </div>
+
+    <section class="portfolio">
+      <div class="wrapper">
+        <a id="portfolio"></a>
+        <h2 class="portfolio__title">Портфолио</h2>
+        <ul class="portfolio__list gallery-list">
+
+          <li class="gallery-list__item">
+            <div class="gallery-list__container">
+              <form action="#modal-section-1">
+                <button id="modal-1" class="gallery-list__button rek-button" type="submit" name="button"></button>
+              </form>
+              <img class="gallery-list__image" src="assets/images/portfolio-site.jpg" alt="Сайт-Портфолио">
+              <div class="gallery-list__background">
+                <h3 class="gallery-list__title">Сайт-Портфолио</h3>
+                <p class="gallery-list__descriprion">Верстка того самого сайта, на котором вы сейчас находитесь.</p>
+              </div>
+            </div>
+            <section id="modal-section-1" class="gallery-list__modal modal-section">
+              <div class="modal-section__content">
+                <form action="#close">
+                  <button class="modal-section__close" type="submit" name="button">&times;</button>
+                </form>
+                <h3 class="modal-section__title">Сайт-Портфолио</h3>
+                <img class="modal-section__image" src="assets/images/portfolio-site.jpg" alt="Сайт-Портфолио">
+                <p class="modal-section__description">
+                  Собственно, это он&nbsp;&mdash; наспех написанный с&nbsp;нуля сайт, на&nbsp;который вы&nbsp;попали скорее всего потому что я&nbsp;отправил вам ссылку)<br>Со&nbsp;старта было решено использовать частично методологию БЭМ, без структуры построения файлов. Первоначально предполагалось, что все стили напишу в&nbsp;less, однако в&nbsp;итоге пришлось отказаться от&nbsp;этой затеи. Макет для сайта был взят самый базовый из&nbsp;бесплатных и&nbsp;потому многое приходилось &laquo;выдумывать&raquo; самостоятельно, а&nbsp;каждый раз перегонять less в&nbsp;<abbr title="Cascading Style Sheets" lang="en">css</abbr>, чтобы увидеть результат свёрстанного блока, не&nbsp;хотелось. Использовал принцип Mobile first и&nbsp;немножко Progressive enhancement, т. е. начал с&nbsp;мобильного вида и&nbsp;минимальных технологий, а&nbsp;далее добавлял понемногу стилизацию и&nbsp;увеличение размеров экрана устройства. На&nbsp;данный момент сайт не&nbsp;закончен т. к. делался на&nbsp;скорую руку. В&nbsp;планах ещё много улучшений: улучшить кнопки и&nbsp;ссылки в&nbsp;соответствии со&nbsp;стандартами доступности (и&nbsp;не&nbsp;только кнопки), сделать адекватную замену интерактива на&nbsp;js&nbsp;при его отключении равно как и&nbsp;дописать весь запланированный интерактив на&nbsp;js&nbsp;или jquery (чтобы не&nbsp;было popup на&nbsp;<abbr title="Cascading Style Sheets" lang="en">css</abbr> и&nbsp;прочих костылей), добавить простенькую библиотеку для обработки формы на&nbsp;<abbr title="Hypertext Preprocessor" lang="en">php</abbr>, разбить стили на&nbsp;более явные блоки/улучшить читаемость/изменить структуру до&nbsp;полного соответствия с&nbsp;БЭМ, добавить отдельные страницы для каждой из&nbsp;работ вместе с&nbsp;отдельной страницей галереи, подключить наконец дополнительную пасхалку для самых внимательных. В&nbsp;общем, привести в&nbsp;приемлемый вид. И&nbsp;быть может даже перейти на&nbsp;Material design. Так что это далеко не&nbsp;конец)
+                </p>
+              </div>
+            </section>
+          </li>
+
+          <li class="gallery-list__item">
+            <div class="gallery-list__container">
+              <form action="#modal-section-2">
+                <button id="modal-2" class="gallery-list__button rek-button" type="submit" name="button"></button>
+              </form>
+              <img class="gallery-list__image" src="assets/images/old-portfolio-site.jpg" alt="старый сайт-портфолио">
+              <div class="gallery-list__background">
+                <h3 class="gallery-list__title">Старый сайт-портфолио</h3>
+                <p class="gallery-list__descriprion">Вёрстка предыдущей версии этого же сайта.</p>
+              </div>
+            </div>
+            <section id="modal-section-2" class="gallery-list__modal modal-section">
+              <div class="modal-section__content">
+                <form action="#close">
+                  <button class="modal-section__close" type="submit" name="button">&times;</button>
+                </form>
+                <h3 class="modal-section__title">Старый сайт-портфолио</h3>
+                <img class="modal-section__image" src="assets/images/old-portfolio-site.jpg" alt="Старый сайт-портфолио">
+                <p class="modal-section__description">
+                  Вёрстка предыдущей версии этого&nbsp;же сайта в&nbsp;старом дизайне сразу после первых успехов в&nbsp;обучении. Хотелось применить всё и&nbsp;сразу, но&nbsp;в&nbsp;итоге стало понятно, что некоторых знаний всё&nbsp;же не&nbsp;хватает, чтобы полностью понять, что происходит и&nbsp;как работает то&nbsp;или иное свойство. И&nbsp;потому в&nbsp;конечном счёте я&nbsp;принял решение сделать новый сайт, но&nbsp;уже на&nbsp;основе более глубоких знаний. В&nbsp;этом&nbsp;же сайте реализована в&nbsp;первую очередь резиновость и&nbsp;десктоп-версия. Планшетные и&nbsp;мобильные версии решил написать позже, просто чуть подкорректировав размеры блоков и&nbsp;шрифты. Так&nbsp;же как и&nbsp;новый, этот сайт делался по&nbsp;одному из&nbsp;найденных бесплатных шаблонов с&nbsp;ручным допиливанием всего и&nbsp;вся. Посмотреть можно <a href="assets/OldPortfolioSite/index.html" target="_blank">тут</a>.
+                </p>
+              </div>
+            </section>
+          </li>
+
+          <li class="gallery-list__item">
+            <div class="gallery-list__container">
+              <form action="#modal-section-3">
+                <button id="modal-3" class="gallery-list__button rek-button" type="submit" name="button"></button>
+              </form>
+              <img class="gallery-list__image" src="assets/images/medservice.jpg" alt="Сайт МедСервис">
+              <div class="gallery-list__background">
+                <h3 class="gallery-list__title">Сайт перетяжки медицинской мебели</h3>
+                <p class="gallery-list__descriprion">Мой первый коммерческий опыт.</p>
+              </div>
+            </div>
+            <section id="modal-section-3" class="gallery-list__modal modal-section">
+              <div class="modal-section__content">
+                <form action="#close">
+                  <button class="modal-section__close" type="submit" name="button">&times;</button>
+                </form>
+                <h3 class="modal-section__title">Сайт перетяжки медицинской мебели</h3>
+                <img class="modal-section__image" src="assets/images/medservice.jpg" alt="Сайт МедСервис">
+                <p class="modal-section__description">
+                  Мой первый коммерческий опыт, за&nbsp;который мне немного (или много) стыдно)<br>За&nbsp;эту работу я&nbsp;взялся примерно середине работы над первым сайтом-портфолио и&nbsp;потому уровень знаний был далёк от&nbsp;хорошего. После меня сайт пытались ещё немного подредактировать, потому конечный результат выглядит немного отличающимся от&nbsp;моей изначальной реализации. Однако&nbsp;же большинство ошибок в&nbsp;вёрстке мои) И&nbsp;да, как обычно, сайт делался по&nbsp;минимально содержательному макету. Посмотреть&nbsp;же на&nbsp;него можно прямо <a href="https://medservice.by/" target="_blank">тут</a>.<br>
+                  В&nbsp;будущем планирую сделать полный разбор на&nbsp;основе этого сайта в&nbsp;духе &laquo;Как не&nbsp;надо было делать&raquo; и&nbsp;заодно поправлю всю вёрстку на&nbsp;&laquo;как надо&raquo;.
+                </p>
+              </div>
+            </section>
+          </li>
+
+          <li class="gallery-list__item">
+            <div class="gallery-list__container">
+              <form action="#modal-section-4">
+                <button id="modal-4" class="gallery-list__button rek-button" type="submit" name="button"></button>
+              </form>
+              <img class="gallery-list__image" src="assets/images/portfolio-site.jpg" alt="Сайт-Портфолио">
+              <div class="gallery-list__background">
+                <h3 class="gallery-list__title">Новый проект</h3>
+                <p class="gallery-list__descriprion">Верстка нового проекта, который тут скоро появится.</p>
+              </div>
+            </div>
+            <section id="modal-section-4" class="gallery-list__modal modal-section">
+              <div class="modal-section__content">
+                <form action="#close">
+                  <button class="modal-section__close" type="submit" name="button">&times;</button>
+                </form>
+                <h3 class="modal-section__title">Новый проект</h3>
+                <img class="modal-section__image" src="assets/images/portfolio-site.jpg" alt="Сайт-Портфолио">
+                <p class="modal-section__description">
+                  Верстка нового проекта.
+                  Скоро сюда добавится новый сайт. Совсем скоро! А пока посмотрите на картинку одного из уже реализованных сайтов)
+                </p>
+              </div>
+            </section>
+          </li>
+
+        </ul>
+        <!-- вернуть после вёрстки отдельных страниц для каждого проекта и страницы с работами
+        <form action="#">
+          <button class="portfolio__button button" type="submit" name="button">Больше работ</button>
+        </form>
+      -->
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <hr class="section-line line">
+    </div>
+<!--
+    <section class="contact-me">
+      <div class="wrapper">
+        <h2 class="contact-me__title">Напишите мне!</h2>
+        <form class="contact-me__form" action="index.html" method="post">
+          <p class="contact-me-item">
+            <label for="contact-me-name"></label>
+            <input id="contact-me-name" type="text" name="name" value="" placeholder="Имя" required autocomplete="on" disabled>
+          </p>
+          <p class="contact-me-item">
+            <label for="contact-me-email"></label>
+            <input id="contact-me-email" type="email" name="email" value="" placeholder="Email" required autocomplete="on" disabled>
+          </p>
+          <p class="contact-me-item text-item">
+            <label for="contact-me-text"></label>
+            <textarea id="contact-me-text" name="text" placeholder="Чем могу помочь?" disabled></textarea>
+          </p>
+          <button id="send-button" class="contact-me__button button" type="submit" name="button" disabled>Отправить</button>
+        </form>
+        <div id="contact-modal" class="contact-me-modal">
+          <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <p class="modal-text">Извините, форма не работает. Воспользуйтесь другими способами связи!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <a id="contact"></a>
+      <ul class="footer__list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://vk.com/amidawolf" target="_blank"><img src="assets/images/icons/vk.svg" width="30" height="30" alt="Вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/evgeniy-voropaev-a2803573/" target="_blank"><img src="assets/images/icons/linkedin.svg" width="30" height="30" alt="linkedin"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://t.me/AmidaWolf" target="_blank"><img src="assets/images/icons/telegram.svg" width="30" height="30" alt="telegram"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/AmidaWolf" target="_blank"><img src="assets/images/icons/github.svg" width="30" height="30" alt="github"></a>
+        </li>
+      </ul>
+
+      <p class="footer__text">Евгений Воропаев</p>
+      <p class="footer__text interactive">powered by AmidaWolf<img class="object wolf" src="assets/images/wolf.gif" width="40" height="20" alt="running wolf"></p>
+    </div>
+  </footer>
+</body>
+
+</html>

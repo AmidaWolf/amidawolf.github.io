@@ -1,0 +1,627 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+acronym {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+/*.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+*/
+
+/*-------------------all buttons style start------------------*/
+
+.btn {
+    display: block;
+    border-width: 2px;
+    border-style: solid;
+    -webkit-border-radius: 2.7em;
+    border-radius: 2.7em;
+    width: 14.5em;
+    height: 2.3em;
+    text-transform: uppercase;
+    font-size: calc(.7em + 0.3vw);
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 2.4em;
+    margin: 0 auto;
+}
+
+/*-------------------all buttons style end------------------*/
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+/*----------- for very old browsers style start --------------*/
+
+@supports not (display: -webkit-flex) or not (display: -moz-flex) or not (display: flex) {
+    .header {
+        display: block;
+    }
+
+    .header-nav {
+        padding-bottom: 2em;
+    }
+
+    .header-nav__list {
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-nav__list li {
+        display: inline-block;
+        font-size: calc(1em + 0.3vw);
+        font-weight: 700;
+
+    }
+
+    .header-nav__list li a {
+        display: block;
+        width: 6em;
+        border-bottom: 2px solid #ffffff;
+        padding: 0 2em;
+        color: #fff;
+    }
+
+    .header-nav__list li a:hover {
+        color: #f4ec0a;
+        border-bottom-color: #6479a2;
+    }
+
+    .header-preview {
+        margin: 3em 0;
+    }
+
+    .header-preview__title {
+        padding-bottom: 0.3em;
+        font-size: 56px;
+        vertical-align: baseline;
+    }
+
+    .header-preview__slogan {
+        text-align: center;
+        font-size: 28px;
+        line-height: 42px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .header-preview__button {
+        margin-top: 1em;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .header-preview__button:hover {
+        color: #6479a2;
+        background-color: white;
+    }
+
+    .header__arrow {
+        width: 42px;
+        height: 50px;
+        margin-left: -24px;
+        font-size: 48px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+    }
+
+    .header__arrow i {
+        color: #fff;
+    }
+
+    .header__arrow i:hover {
+        color: #f4ec0a;
+    }
+}
+
+/*----------- for very old browsers style end--------------*/
+
+.header {
+    background-image: url(../images/background-header.jpeg);
+    -webkit-box-shadow: inset 0 0 0 100vh rgba(0, 67, 113, 0.4);
+    -moz-box-shadow: inset 0 0 0 100vh rgba(0, 67, 113, 0.4);
+    box-shadow: inset 0 0 0 100vh rgba(0, 67, 113, 0.4);
+    /*проверить новые войства для задания затемнения картинке на хтмл-академи*/
+    background-size: cover;
+    background-position: 50%;
+    color: #ffffff;
+    padding: 0 2em 0 2em;
+    height: 100vh;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    margin-top: 2em;
+}
+
+.header-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav__list li a {
+    display: block;
+    width: 10em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: calc(0.8em + 0.3vw);
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-nav__list li a:hover {
+    color: #f4ec0a;
+    border-bottom-color: #6479a2;
+}
+
+.header-preview__title {
+    padding-bottom: 0.3em;
+    font-size: 56px;
+}
+
+.header-preview__slogan {
+    text-align: center;
+    font-size: 28px;
+    line-height: 42px;
+    padding-bottom: 1em;
+}
+
+.header-preview__button,
+.footer__button {
+    margin-top: 1em;
+    border-color: #fff;
+    color: #fff;
+}
+
+.header-preview__button:hover,
+.footer__button:hover {
+    color: #6479a2;
+    background-color: white;
+}
+
+.header__arrow {
+    margin-bottom: 0.5em;
+    font-size: 26px;
+}
+
+.header__arrow i {
+    color: #fff;
+}
+
+.header__arrow i:hover {
+    color: #f4ec0a;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+/* Portfolio
+-----------------------------------------------------------------------------*/
+
+/*----------- for very old browsers style start --------------*/
+
+@supports not (display: -webkit-flex) or not (display: -moz-flex) or not (display: flex) {
+
+    .content {
+        padding: 0 2em 0 2em;
+    }
+
+    .portfolio__title {
+        font-size: 32px;
+        margin: 1.3em 0;
+    }
+
+    .portfolio ul:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .portfolio-card {
+        -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: calc((100%/3) - 18.7px);
+        min-height: 30em;
+        float: left;
+        margin: 0 14px 2em 14px;
+    }
+
+    .portfolio-card:first-child {
+        margin-left: 0;
+    }
+
+    .portfolio-card:last-child {
+        margin-right: 0;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-card h3 {
+        margin-top: 1em;
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .portfolio-card p {
+        margin: 1em;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .portfolio__button {
+        color: white;
+        background-color: #061634;
+        margin: 4em auto 2em auto;
+    }
+
+    .portfolio__button:hover {
+        color: #061634;
+        background-color: white;
+    }
+
+    .portfolio-galery__button {
+        display: block;
+        font-family: Merriweather;
+        font-size: 18px;
+        text-transform: inherit;
+        text-align: right;
+        color: #061634;
+        margin-bottom: 2em;
+    }
+
+    .portfolio-galery__button i {
+        color: #ffffff;
+    }
+
+    .portfolio-galery__button:hover {
+        text-decoration: underline;
+    }
+
+    .portfolio-galery__button:hover i {
+        color: #061634;
+        text-decoration: underline;
+    }
+}
+
+/*----------- for very old browsers style end--------------*/
+
+.content {
+    padding: 0 2em 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio__title {
+    font-size: 32px;
+    margin: 1.3em 0;
+}
+
+.portfolio ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 1 31%;
+}
+
+.portfolio-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 31%;
+    min-height: 30em;
+    min-width: 15em;
+}
+
+.portfolio-card h3 {
+    padding: 1em 1em;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.portfolio-card p {
+    padding: 1em 1em;
+    line-height: 1.2;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.portfolio__button {
+    margin-bottom: 3em;
+    color: #ffffff;
+    background-color: #061634;
+}
+
+.portfolio__button:hover {
+    color: #061634;
+    background-color: white;
+}
+
+.portfolio-galery__button {
+    display: block;
+    font-family: Merriweather;
+    font-size: 18px;
+    text-transform: inherit;
+    text-align: right;
+    color: #061634;
+    margin: 2em 0;
+}
+
+.portfolio-galery__button:hover {
+    text-decoration: underline;
+}
+
+.portfolio-galery__button:hover i {
+    color: #061634;
+    text-decoration: underline;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+/*----------- for very old browsers style start --------------*/
+
+@supports not (display: -webkit-flex) or not (display: -moz-flex) or not (display: flex) {
+    .footer {
+        background-color: #061634;
+        padding: 2em;
+    }
+
+    .col {
+        text-align: center;
+        width: calc((100%/3) - 18.7px);
+        float: left;
+        margin: 0 14px 2em 14px;
+    }
+
+    .col:first-child {
+        margin-left: 0;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+    }
+
+    .footer-name__title {
+        color: #6479a2;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 0.5em;
+    }
+
+    .footer-name__text,
+    .footer-contact__text {
+        color: #6479a2;
+        font-size: 16px;
+    }
+
+    .footer-social__text {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .footer-social__icons {
+        margin: 1em auto;
+    }
+
+    .footer-social__icons a {
+        padding: 0.3em 0.5em;
+        font-size: 32px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .footer-social__icons a:hover {
+        color: #f4ec0a;
+        ;
+    }
+
+    .footer__button {
+        margin-bottom: 1em;
+    }
+
+    .footer__button:hover {
+        color: #061634;
+    }
+
+    .interactive {
+        display: none;
+    }
+}
+
+/*----------- for very old browsers style end--------------*/
+
+.footer {
+    background-color: #061634;
+    padding: 2em;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 1 31%;
+}
+
+.col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 31%;
+    min-height: 10em;
+    min-width: 15em;
+    align-items: center;
+}
+
+.footer-name__title {
+    color: #6479a2;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer-name__text,
+.footer-contact__text {
+    color: #6479a2;
+    font-size: 16px;
+}
+
+.footer-social__text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+.footer-social__icons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social__icons a {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-social__icons a:hover {
+    color: #f4ec0a;
+}
+
+.footer__button:hover {
+    color: #061634;
+}
+
+
+.interactive {
+    color: #7f7f7f;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Анимация бегущего волка */
+.wolf {
+    display: none;
+}
+
+.interactive:hover .wolf {
+    display: block;
+}
+
+
+.object {
+    animation-name: stylie-transform-keyframes;
+    animation-duration: 5000ms;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 0 0;
+}
+
+@keyframes stylie-transform-keyframes {
+    0% {
+        transform: translate(0px, 0px) scale(1) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+    100% {
+        transform: translate(90vw, 0px) scale(1) translate(-50%, -50%);
+    }
+}
+
+
